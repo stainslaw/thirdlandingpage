@@ -1,0 +1,68 @@
+/* Body */
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto', arial;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    border-bottom: #c5c3c3 solid 1px;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+.header-links, a{
+    display: flex;
+    gap: 40px;
+    align-self: center;
+    font-size: 16px;
+    color: #5e5e5e;
+    text-decoration-line: none;
+    margin: 5px;
+}
+
+  
+.second-nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-self: center;
+    font-size: 16px;
+    color: #5e5e5e;
+    text-decoration-line: none;
+    margin: 5px;
+}
+
+.hero {
+}
+
+
+
+/* Hero */
+
+/* Projects */
+
+/* Sidebar */
+
+/* Footer */
+
+
