@@ -16,13 +16,14 @@ html {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     padding: 16px;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
     background-color: #ffffff;
     text-transform: uppercase;
     text-decoration-line: none;
-    border-bottom: #c5c3c3 solid 1px;
+    
 }
 
 img {
@@ -30,7 +31,7 @@ img {
     height: auto;
 }
 
-.header-links, a{
+.header-links, .header-links-right, a{
     display: flex;
     gap: 40px;
     align-self: center;
@@ -39,25 +40,34 @@ img {
     text-decoration-line: none;
     margin: 5px;
 }
-
   
 .second-nav {
     display: flex;
-    gap: 40px;
+    gap: 120px;
+    padding: 5px;
     justify-content: center;
     align-self: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #5e5e5e;
     text-decoration-line: none;
     margin: 5px;
+    border-top: #c5c3c3 solid 1px;
+    border-bottom: #c5c3c3 solid 1px;
+    width: 100%;
 }
-
-.hero {
-}
-
 
 
 /* Hero */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
 
 /* Projects */
 
