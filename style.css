@@ -12,6 +12,7 @@ html {
     scroll-behavior: smooth;
    }
 
+
 /* Navbar */
 
 .navbar {
@@ -22,8 +23,7 @@ html {
     flex-direction: row;
     background-color: #ffffff;
     text-transform: uppercase;
-    text-decoration-line: none;
-    
+    text-decoration-line: none;    
 }
 
 img {
@@ -31,14 +31,14 @@ img {
     height: auto;
 }
 
-.header-links, .header-links-right, a{
+.header-links-left, .header-links-right, a{
     display: flex;
-    gap: 40px;
+    gap: 10px;
     align-self: center;
     font-size: 16px;
     color: #5e5e5e;
     text-decoration-line: none;
-    margin: 5px;
+    margin: 5px 30px;
 }
   
 .second-nav {
@@ -61,18 +61,19 @@ img {
 
 .hero {
     display: flex;
-    flex-wrap: wrap;
-    padding: 16px;
-    justify-content: space-between;
     flex-direction: row;
-    background-color: #ffffff;
-    text-transform: uppercase;
+    justify-content: center;
+    gap: 40px;
+    margin: 25px 100px;
 }
 
-/* Projects */
-
-/* Sidebar */
+.hero img {
+    display: block;
+    width: 675px;
+    height: auto;
+}
 
 /* Footer */
+
 
 
