@@ -18,11 +18,10 @@ html {
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    padding: 16px;
+    padding: 20px;
     justify-content: space-between;
     flex-direction: row;
     background-color: #ffffff;
-    text-transform: uppercase;
     text-decoration-line: none;    
 }
 
@@ -31,11 +30,26 @@ img {
     height: auto;
 }
 
+.site-search input {
+    display: flex;
+    margin-top: 21px;
+    border-radius: 30px;
+    min-height: 44px;
+    min-width: 100px;
+    padding-left: 25px;
+    padding-top: 3px;
+    border: 1px solid #777;
+    font-size: 17.5px;
+    padding-right: 3rem;
+    height: 10%;
+    width: 650px;
+}
+
 .header-links-left, .header-links-right, a{
     display: flex;
     gap: 10px;
     align-self: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #5e5e5e;
     text-decoration-line: none;
     margin: 5px 30px;
@@ -50,12 +64,172 @@ img {
     font-size: 14px;
     color: #5e5e5e;
     text-decoration-line: none;
-    margin: 5px;
+    margin-top: 5px;
     border-top: #c5c3c3 solid 1px;
-    border-bottom: #c5c3c3 solid 1px;
     width: 100%;
 }
 
+/* Slider */
+
+#slider {
+   width: 100%;
+   margin-bottom: 30px;
+   max-width: 100%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+
+#overflow {
+   overflow: hidden;
+}
+
+/* Direction */
+
+#slide1:checked ~ #slides .inner {
+   margin-left: 10;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+
+#slides .inner {
+   transition: margin-left 600ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 450px;
+}
+
+/* Words of Slides */
+
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: rgb(255, 255, 255);
+}
+
+/* Words of Colours */
+
+#slides .slide_1 {
+   background: #f9d2e5;
+}
+#slides .slide_2 {
+   background: #ffecb7;
+}
+#slides .slide_3 {
+   background: #cae7e6;
+}
+#slides .slide_4 {
+   background: #cfc8f6;
+}
+
+/* Buttons */
+
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 100%;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+
+#bullets label {
+   display: inline-block;
+   width: 14px;
+   height: 14px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+
+/* Colour of Background */
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #e91e63;
+    width: 17px;
+    height: 17px;
+}
+
+
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
+
+/* wtywl */
+
+p {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #5e5e5e;
+    padding: 20px;
+}
 
 /* Hero */
 
@@ -63,7 +237,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     margin: 25px 100px;
 }
 
