@@ -18,7 +18,7 @@ html {
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
     flex-direction: row;
     background-color: #ffffff;
@@ -26,11 +26,11 @@ html {
 }
 
 img {
-    width: 80px;
+    width: 90px;
     height: auto;
 }
 
-.site-search input {
+/* .site-search input {
     display: flex;
     margin-top: 21px;
     border-radius: 30px;
@@ -43,34 +43,55 @@ img {
     padding-right: 3rem;
     height: 10%;
     width: 600px;
-}
+} */
 
 
-.site-search button[type="submit"] {
-   text-indent: -999px;
-   overflow: hidden;
-   display: block;
-   width: 40px;
-   height: 40px;
-   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-   cursor: pointer;
-   opacity: 0.7;
-   color: white;
-   padding: 2px;
-   border: 1px solid white;
+.nosubmit {
+   color: #5e5e5e;
+   display: flex;
+   padding: 0px;
+   border: 1px solid #555;
    border-radius: 30px;
+   margin: 20px 0px 16px;
+   width: 650px;
+ }
+ 
+ input[type="search"] {
+   border: none;
+   background: transparent;
+   margin-top: 10px;
+   padding: 1px 10px;
+   font-size: 17.5px;
+   color: inherit;
+   border: 1px solid transparent;
+   border-radius: inherit;
+ }
+ 
+ input[type="search"]::placeholder {
+   color: #8f8f8f;
  }
  
  button[type="submit"]:hover {
    opacity: 1;
  }
-
-button[type="submit"]:focus,
-input[type="search"]:focus {
-  box-shadow: 0 0 4px 0 #e91e63;
-  border-color: #e91e63;
-  outline: none;
-}
+ 
+ button[type="submit"]:focus,
+ input[type="search"]:focus {
+   box-shadow: 0 0 3px 0 #e91e63;
+   border-color: #e91e63;
+   outline: none;
+ }
+ 
+ form.nosubmit {
+  border: none;
+ }
+ 
+ input.nosubmit {
+   border: 1px solid #555;
+   width: 100%;
+   padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+ }
 
 
 .header-links-left, .header-links-right, a{
@@ -80,13 +101,13 @@ input[type="search"]:focus {
     font-size: 18px;
     color: #5e5e5e;
     text-decoration-line: none;
-    margin: 5px 30px;
+    margin: 3px 30px;
 }
   
 .second-nav {
     display: flex;
     gap: 120px;
-    padding: 5px;
+    padding: 8px;
     justify-content: center;
     align-self: center;
     font-size: 14px;
