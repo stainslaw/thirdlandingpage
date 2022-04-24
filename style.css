@@ -36,14 +36,42 @@ img {
     border-radius: 30px;
     min-height: 44px;
     min-width: 100px;
-    padding-left: 25px;
+    padding-left: 20px;
     padding-top: 3px;
     border: 1px solid #777;
     font-size: 17.5px;
     padding-right: 3rem;
     height: 10%;
-    width: 650px;
+    width: 600px;
 }
+
+
+.site-search button[type="submit"] {
+   text-indent: -999px;
+   overflow: hidden;
+   display: block;
+   width: 40px;
+   height: 40px;
+   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+   cursor: pointer;
+   opacity: 0.7;
+   color: white;
+   padding: 2px;
+   border: 1px solid white;
+   border-radius: 30px;
+ }
+ 
+ button[type="submit"]:hover {
+   opacity: 1;
+ }
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 4px 0 #e91e63;
+  border-color: #e91e63;
+  outline: none;
+}
+
 
 .header-links-left, .header-links-right, a{
     display: flex;
