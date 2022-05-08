@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
    }
 
-
 /* Navbar */
 
 .navbar {
@@ -30,21 +29,7 @@ img {
     height: auto;
 }
 
-/* .site-search input {
-    display: flex;
-    margin-top: 21px;
-    border-radius: 30px;
-    min-height: 44px;
-    min-width: 100px;
-    padding-left: 20px;
-    padding-top: 3px;
-    border: 1px solid #777;
-    font-size: 17.5px;
-    padding-right: 3rem;
-    height: 10%;
-    width: 600px;
-} */
-
+/* Search */
 
 .nosubmit {
    color: #5e5e5e;
@@ -118,7 +103,7 @@ img {
     width: 100%;
 }
 
-/* Slider */
+/* Dimensions of slider */
 
 #slider {
    width: 100%;
@@ -138,7 +123,7 @@ img {
    overflow: hidden;
 }
 
-/* Direction */
+/* Direction of slider */
 
 #slide1:checked ~ #slides .inner {
    margin-left: 10;
@@ -160,7 +145,7 @@ img {
    height: 450px;
 }
 
-/* Words of Slides */
+/* Dimensions of slides */
 
 #slides .slide {
    width: 25%;
@@ -172,7 +157,7 @@ img {
    color: rgb(255, 255, 255);
 }
 
-/* Words of Colours */
+/* Colour of each slide */
 
 #slides .slide_1 {
    background: #cae7e6;
@@ -186,6 +171,8 @@ img {
 #slides .slide_4 {
    background: #cfc8f6;
 }
+
+/* Words */
 
 #slides .slide-content-1 p{
    font-weight: bold;
@@ -355,18 +342,51 @@ img {
    --my-shadow-color: #f3f3f3;
  }
 
-/*.three-box p {
-   color: #5e5e5e;
-   display: block;
-   text-align: center;
-   flex-wrap: wrap;
-   line-height: 25px;
-   font-weight: 300;
-   margin: 20px 40px;
+ /* Bottom Three boxes */
+
+ .bottom-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
-*/
+
+.fourbox, 
+.fivebox, 
+.sixbox {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin: 110px 40px 70px 70px;
+   flex-wrap: wrap;
+   padding-top: 10px;
+   width: 450px;
+   height: 200px;
+   border-radius: 10px;
+   background-color: #f3f3f3;
+   box-shadow: 3px 3px 10px -1px var(--my-shadow-color);
+}
+
+.fourbox {
+   background: #cae7e6;
+}
+
+.fivebox {
+   background: #f9d2e5;
+}
+
+.sixbox {
+   background: #ffecb7;
+}
 
 /* Footer */
+
+.footer {
+   background-color: #5e5e5e;
+   color: #fff;
+   font-size: 18px;
+   font-family: 'Roboto', arial;
+   padding: 15px 0px;
+}
 
 
 
