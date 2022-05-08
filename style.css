@@ -81,9 +81,9 @@ img {
 
 .header-links-left, .header-links-right, a{
     display: flex;
-    gap: 10px;
+    gap: 9px;
     align-self: center;
-    font-size: 18px;
+    font-size: 17px;
     color: #5e5e5e;
     text-decoration-line: none;
     margin: 3px 30px;
@@ -92,7 +92,7 @@ img {
 .second-nav {
     display: flex;
     gap: 120px;
-    padding: 8px;
+    padding: 12px;
     justify-content: center;
     align-self: center;
     font-size: 14px;
@@ -295,7 +295,7 @@ img {
    }
 }
 
-/* wtywl */
+/* Top Deals */
 
 .branddeals p {
    display: block;
@@ -303,7 +303,7 @@ img {
    font-weight: 400;
    color: #5e5e5e;
    padding: 10px;
-   margin-top: 40px;
+   margin-top: 20px;
 }
 
 .box {
@@ -315,7 +315,7 @@ img {
 .three-box {
    display: flex;
    justify-content: center;
-   text-align: center;
+   text-align: left;
    margin: 50px 70px;
    flex-wrap: wrap;
    padding-top: 10px;
@@ -358,12 +358,25 @@ img {
    text-align: center;
    margin: 110px 40px 70px 70px;
    flex-wrap: wrap;
-   padding-top: 10px;
-   width: 450px;
-   height: 200px;
+   padding: 10px 15px 15px 10px;
+   width: 490px;
+   height: 180px;
    border-radius: 10px;
    background-color: #f3f3f3;
    box-shadow: 3px 3px 10px -1px var(--my-shadow-color);
+   color: #424242;
+   font-size: 18px;
+}
+
+.highlight {
+   color:#e31b6d;
+}
+
+.boldhighlight {
+   font-weight: bold;
+}
+.tandc {
+   font-size: 15px;
 }
 
 .fourbox {
@@ -378,7 +391,12 @@ img {
    background: #ffecb7;
 }
 
+
 /* Footer */
+
+.notice {
+   font-size: 15px;
+}
 
 .footer {
    background-color: #5e5e5e;
@@ -387,6 +405,3 @@ img {
    font-family: 'Roboto', arial;
    padding: 15px 0px;
 }
-
-
-
